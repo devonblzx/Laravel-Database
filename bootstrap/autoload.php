@@ -15,14 +15,13 @@ define('BASE', dirname(__DIR__));
 
 require BASE . '/vendor/autoload.php';
 
+use Bootstrap\Config\Config;
 use Bootstrap\Container\Application;
 use Illuminate\Support\Facades\Facade;
 use Illuminate\Database\Capsule\Manager as Capsule;
 use Illuminate\Events\Dispatcher;
 use Illuminate\Cache\CacheManager;
 use Illuminate\Filesystem\Filesystem;
-use Luracast\Config\Config;
-
 
 $app = new Application();
 
